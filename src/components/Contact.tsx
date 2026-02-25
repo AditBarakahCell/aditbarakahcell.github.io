@@ -126,14 +126,28 @@ export function Contact() {
 
           {/* Map & CTA */}
           <div className="lg:col-span-3 space-y-6">
-            {/* Map placeholder */}
+{/* Map with blurred Google Maps background */}
             <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 aspect-video sm:min-h-[350px] border border-gray-200">
+              {/* Google Maps Embed as blurred background */}
+              <div className="absolute inset-0 w-full h-full">
+                <iframe
+                  src="https://www.google.com/maps/place/adit+barakah+cell+service+hp,+laptop,+komputer+%26+jual+laptop+second/@-7.1801144,112.6307021,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd801d945a2165b:0x437d8716078248ac!8m2!3d-7.1801144!4d112.6307021!16s%2Fg%2F11sw3kf5zn?entry=tts&g_ep=EgoyMDI2MDIxOC4wIPu8ASoASAFQAw%3D%3D&skid=afd60438-3319-4b0a-a27d-da66c699cc41"
+                  className="w-full h-full border-0 blur-[2px] scale-110 opacity-60"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Lokasi Adit Barakah Cell"
+                ></iframe>
+              </div>
+              {/* Dark overlay for readability */}
+              <div className="absolute inset-0 bg-white/40 pointer-events-none"></div>
+              {/* Content overlay */}
               <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-6 text-center">
-                <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-primary-100 flex items-center justify-center mb-4 animate-pulse-glow">
+                <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center mb-4 shadow-xl animate-pulse-glow">
                   <MapPin className="h-8 w-8 sm:h-10 sm:w-10 text-primary-600" />
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Lokasi Adit Barakah Cell</h3>
-                <p className="text-sm text-gray-500 mb-4 max-w-sm">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 drop-shadow-sm">Lokasi Adit Barakah Cell</h3>
+                <p className="text-sm text-gray-700 mb-5 max-w-sm bg-white/60 backdrop-blur-sm rounded-xl px-4 py-2">
                   Temukan toko kami dengan mudah. Klik tombol di bawah untuk membuka di Google Maps.
                 </p>
                 <a
@@ -147,22 +161,12 @@ export function Contact() {
                   <ExternalLink className="h-3 w-3" />
                 </a>
               </div>
-
-              {/* Decorative map grid */}
-              <svg className="absolute inset-0 w-full h-full opacity-20 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <pattern id="mapgrid" width="40" height="40" patternUnits="userSpaceOnUse">
-                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#9ca3af" strokeWidth="0.5"/>
-                  </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#mapgrid)"/>
-              </svg>
             </div>
 
             {/* Quick Action Cards */}
             <div className="grid sm:grid-cols-2 gap-4">
               <a
-                href="https://wa.me/6285xxxxxxxxx?text=Halo%20Adit%20Barakah%20Cell%2C%20saya%20ingin%20konsultasi%20tentang%20servis"
+                href="https://wa.me/6283854299035?text=Halo%20Adit%20Barakah%20Cell%2C%20saya%20ingin%20konsultasi%20tentang%20servis"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-4 rounded-2xl bg-gradient-to-r from-green-500 to-green-600 p-4 sm:p-5 text-white shadow-lg shadow-green-500/20 hover:shadow-green-500/40 hover:scale-[1.02] transition-all duration-300"
