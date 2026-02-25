@@ -128,7 +128,7 @@ export function Contact() {
           <div className="lg:col-span-3 space-y-6">
             {/* Map placeholder */}
             <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 aspect-video sm:min-h-[350px] border border-gray-200">
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+              <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-6 text-center">
                 <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-primary-100 flex items-center justify-center mb-4 animate-pulse-glow">
                   <MapPin className="h-8 w-8 sm:h-10 sm:w-10 text-primary-600" />
                 </div>
@@ -140,7 +140,7 @@ export function Contact() {
                   href="https://maps.app.goo.gl/CzyemR5DuyAuZnRE7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-5 sm:px-6 py-2.5 sm:py-3 text-sm font-semibold text-white hover:bg-primary-700 shadow-lg shadow-primary-600/30 hover:shadow-primary-600/50 hover:scale-105 transition-all duration-300"
+                  className="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-5 sm:px-6 py-2.5 sm:py-3 text-sm font-semibold text-white hover:bg-primary-700 shadow-lg shadow-primary-600/30 hover:shadow-primary-600/50 hover:scale-105 transition-all duration-300 cursor-pointer"
                 >
                   <MapPin className="h-4 w-4" />
                   Buka Google Maps
@@ -149,7 +149,7 @@ export function Contact() {
               </div>
 
               {/* Decorative map grid */}
-              <svg className="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
+              <svg className="absolute inset-0 w-full h-full opacity-20 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <pattern id="mapgrid" width="40" height="40" patternUnits="userSpaceOnUse">
                     <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#9ca3af" strokeWidth="0.5"/>
