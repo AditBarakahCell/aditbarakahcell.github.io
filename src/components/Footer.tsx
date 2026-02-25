@@ -84,8 +84,8 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-4">Kontak</h3>
             <div className="space-y-3 text-sm text-gray-400">
-              <p>📍 Jl. Contoh Alamat No. 123</p>
-              <p>📱 085-xxx-xxx-xxx</p>
+              <p>📍 Jl. Sunan Giri Gg. No.103</p>
+              <p>📱 083-854-299-035</p>
               <p>✉️ aditbarakahcell@gmail.com</p>
               <p>🕐 Senin - Sabtu: 08.00 - 21.00</p>
             </div>
