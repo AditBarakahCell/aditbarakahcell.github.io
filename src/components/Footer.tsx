@@ -95,7 +95,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs sm:text-sm text-gray-500 text-center sm:text-left">
-            © {new Date().getFullYear()} Adit Barakah Cell. All rights reserved. Made with{' '}
+            © {new Date().getFullYear()} Adit Barakah Cell. All rights reserved. Made by Reo with {' '}
             <Heart className="inline h-3 w-3 text-red-500 fill-red-500" /> di Indonesia
           </p>
           <a
