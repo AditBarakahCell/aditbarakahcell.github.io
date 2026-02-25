@@ -29,7 +29,7 @@ export function Hero() {
       <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-primary-500/20 blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 h-96 w-96 rounded-full bg-primary-700/20 blur-3xl" />
 
-      <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 text-center">
+      <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 text-center pt-20 sm:pt-24">
         {/* Badge */}
         <div className="animate-fade-in-up inline-flex items-center gap-2 rounded-full border border-primary-400/30 bg-primary-500/10 px-4 sm:px-5 py-2 sm:py-2.5 backdrop-blur-sm mb-6 sm:mb-8">
           <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
