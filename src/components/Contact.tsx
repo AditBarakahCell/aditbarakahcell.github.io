@@ -137,7 +137,7 @@ export function Contact() {
                   Temukan toko kami dengan mudah. Klik tombol di bawah untuk membuka di Google Maps.
                 </p>
                 <a
-                  href="https://maps.google.com/?q=Adit+Barakah+Cell"
+                  href="https://maps.app.goo.gl/CzyemR5DuyAuZnRE7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-5 sm:px-6 py-2.5 sm:py-3 text-sm font-semibold text-white hover:bg-primary-700 shadow-lg shadow-primary-600/30 hover:shadow-primary-600/50 hover:scale-105 transition-all duration-300"
