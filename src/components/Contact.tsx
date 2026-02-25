@@ -131,7 +131,7 @@ export function Contact() {
               {/* Google Maps Embed as blurred background */}
               <div className="absolute inset-0 w-full h-full">
                 <iframe
-                  src="https://www.google.com/maps/place/adit+barakah+cell+service+hp,+laptop,+komputer+%26+jual+laptop+second/@-7.1801144,112.6307021,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd801d945a2165b:0x437d8716078248ac!8m2!3d-7.1801144!4d112.6307021!16s%2Fg%2F11sw3kf5zn?entry=tts&g_ep=EgoyMDI2MDIxOC4wIPu8ASoASAFQAw%3D%3D&skid=afd60438-3319-4b0a-a27d-da66c699cc41"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0!2d106.8!3d-6.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMDAuMCJTIDEwNsKwNDgnMDAuMCJF!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid&q=Adit+Barakah+Cell"
                   className="w-full h-full border-0 blur-[2px] scale-110 opacity-60"
                   allowFullScreen
                   loading="lazy"
