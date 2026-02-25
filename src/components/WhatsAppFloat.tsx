@@ -1,9 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { X, MessageCircle } from 'lucide-react';
 
 export function WhatsAppFloat() {
   const [showTooltip, setShowTooltip] = useState(false);
   const [visible, setVisible] = useState(false);
+  const [bottomOffset, setBottomOffset] = useState(24);
+  const rafRef = useRef<number>(0);
 
   useEffect(() => {
     const timer = setTimeout(() => setVisible(true), 2000);
@@ -17,10 +19,43 @@ export function WhatsAppFloat() {
     }
   }, [visible]);
 
+  // Detect footer and adjust position
+  useEffect(() => {
+    const handleScroll = () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      rafRef.current = requestAnimationFrame(() => {
+        const footer = document.querySelector('footer');
+        if (!footer) return;
+        const footerRect = footer.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const buttonHeight = 80; // button + gap
+        const minBottom = 24;
+
+        if (footerRect.top < windowHeight) {
+          // Footer is visible, push button above it
+          const newBottom = windowHeight - footerRect.top + 16;
+          setBottomOffset(Math.max(newBottom, minBottom));
+        } else {
+          setBottomOffset(minBottom);
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    };
+  }, []);
+
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end gap-3">
+    <div
+      className="fixed right-4 sm:right-6 z-50 flex flex-col items-end gap-3 transition-all duration-300"
+      style={{ bottom: `${bottomOffset}px` }}
+    >
       {/* Tooltip */}
       {showTooltip && (
         <div className="relative animate-fade-in-up bg-white rounded-2xl shadow-2xl p-3 sm:p-4 max-w-[240px] sm:max-w-xs border border-gray-100">
