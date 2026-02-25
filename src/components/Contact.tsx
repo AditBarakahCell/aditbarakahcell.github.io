@@ -4,7 +4,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Alamat Toko',
-    details: ['Jl. Contoh Alamat No. 123', 'Kota, Provinsi, Indonesia'],
+    details: ['Jl. Sunan Giri Gg. No.103', 'Gresik, Jawa Timur, Indonesia'],
     color: 'from-red-500 to-pink-500',
     bgColor: 'bg-red-50',
   },
@@ -42,7 +42,7 @@ const socialLinks = [
   {
     icon: Instagram,
     label: 'Instagram',
-    href: 'https://instagram.com/aditbarakahcell',
+    href: 'https://www.instagram.com/adit_99_service/',
     color: 'bg-gradient-to-br from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600',
     desc: '@aditbarakahcell',
   },
