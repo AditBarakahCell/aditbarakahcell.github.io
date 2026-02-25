@@ -11,7 +11,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Telepon / WhatsApp',
-    details: ['085-xxx-xxx-xxx', 'Bisa WA & Telepon'],
+    details: ['083-854-299-035', 'Bisa WA & Telepon'],
     color: 'from-green-500 to-emerald-500',
     bgColor: 'bg-green-50',
   },
@@ -35,7 +35,7 @@ const socialLinks = [
   {
     icon: MessageCircle,
     label: 'WhatsApp',
-    href: 'https://wa.me/6285xxxxxxxxx',
+    href: 'https://wa.me/6283854299035',
     color: 'bg-green-500 hover:bg-green-600',
     desc: 'Chat langsung',
   },
@@ -177,7 +177,7 @@ export function Contact() {
               </a>
 
               <a
-                href="tel:085xxxxxxxxx"
+                href="tel:083854299035"
                 className="group flex items-center gap-4 rounded-2xl bg-gradient-to-r from-primary-500 to-primary-600 p-4 sm:p-5 text-white shadow-lg shadow-primary-500/20 hover:shadow-primary-500/40 hover:scale-[1.02] transition-all duration-300"
               >
                 <div className="h-12 w-12 rounded-xl bg-white/20 flex items-center justify-center group-hover:bg-white/30 transition-colors">
