@@ -99,7 +99,7 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="https://wa.me/6285xxxxxxxxx"
+            href="https://wa.me/6283854299035"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 mt-3 rounded-xl bg-gradient-to-r from-green-500 to-green-600 px-5 py-3 text-sm font-semibold text-white shadow-lg"
